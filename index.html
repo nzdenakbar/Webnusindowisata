@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nusindo Wisata</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    #hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('background-image.jpg') no-repeat center center/cover;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.8); /* Warna putih dengan transparansi */
+    padding: 20px 30px;
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    display: inline-block; /* Supaya ukurannya menyesuaikan */
+}
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    #hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 15s infinite linear;
+}
+
+/* Animasi Background Slideshow */
+@keyframes slideBackground {
+    0% { background-image: url('gambar.oi/Bali.jpg'); }
+    30% { background-image: url('gambar.oi/borobudur.jpg'); }
+    66% { background-image: url('gambar.oi/gambar2.jpg'); }
+    100% { background-image: url('gambar.oi/Bali.jpg'); } /* Kembali ke awal */
+}
+
+/* Background putih transparan untuk teks */
+.hero-text {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+    .intro-info {
+      text-align: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      /* Hapus atau ubah warna latar belakang */
+      background-color: transparent; /* Bisa diganti dengan rgba(255, 255, 255, 0) untuk menghilangkan background putih */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-info h2 {
+      font-size: 56px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .intro-info h2 span {
+      color: #007bff;
+    }
+
+    .btn-get-started {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+    }
+
+    .btn-get-started:hover {
+      background-color: #0056b3;
+    }
+
+    .intro-gambar2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .intro-gambar2 img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 992px) {
+      .intro-info,
+      .intro-gambar2 {
+        flex: 1;
+      }
+
+      .intro-info {
+        padding: 60px 50px;
+      }
+
+      .intro-gambar2 img {
+        max-width: 100%;
+      }
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-logo img {
+      max-height: 50px;
+      margin-right: 10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+      <div class="header-logo me-auto">
+        <img src="gambar.oi/logofix.png" alt="Logo">
+        <h1 class="logo"><a href="index.html">Nusindo Wisata</a></h1>
+      </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="tentangkami.html">Tentang Kami</a></li>
+          <li><a class="nav-link scrollto" href="paketwisata.html">Paket Wisata</a></li>
+          <li><a class="nav-link active" href="info.html">Informasi</a></li>
+          <li class="dropdown"><a href="objectwisata.html"><span>Object Wisata</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="paketwisatalombok.html">Paket Wisata Lombok</a></li>
+              <li><a href="paketwisatabali.html">Paket Wisata Bali</a></li>
+              <li><a href="paketwisatayogyakarta.html">Paket Wisata Yogyakarta</a></li>
+              <li><a href="paketwisatabandung.html">Paket Wisata Bandung</a></li>
+              <li><a href="paketwisatajakarta.html">Paket Wisata Jakarta</a></li>
+              <li><a href="paketwisatabromo.html">Paket Wisata Tour Bromo</a></li>
+              <li><a href="paketwisatabromomalang.html">Paket Wisata Bromo-Malang</a></li>
+              <li><a href="paketwisatamalang.html">Paket Wisata Tour Malang</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="formkontak.php">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="hero-text">
+                    <h2>Nusindo Wisata<br>Paket Wisata <span>Termurah</span></h2>
+                    <div>
+                        <a href="tentangkami.html" class="btn-get-started scrollto">Lanjut ke Tentang Kami</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Hero -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

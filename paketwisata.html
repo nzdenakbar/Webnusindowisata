@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Paket Wisata Nusindo</title>
+    <meta content="Paket wisata terbaik di Indonesia" name="description">
+    <meta content="travel, tourism, Bali, Lombok, Jawa, Bandung, Jakarta, vacation packages" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        
+        header {
+            z-index: 999; /* Pastikan header tetap di atas */
+        }
+
+        main {
+            margin-top: 80px; /* Geser konten utama ke bawah untuk menghindari bentrok dengan header */
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-bottom: 20px; /* Jarak dengan elemen berikutnya */
+        }
+
+        .package-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .package {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .package img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-content {
+            padding: 10px;
+            flex-grow: 1;
+        }
+
+        .package h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .package p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .package button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .package button:hover {
+            background-color: #0056b3;
+        }
+
+        .package:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center">
+            <h1 class="logo me-auto"><a href="index.html">Nusindo Wisata</a></h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a class="nav-link scrollto" href="paketwisata.html">Paket Wisata</a></li>
+                    <li><a class="nav-link active" href="info.html">Informasi</a></li>
+                    <li class="dropdown"><a href="objectwisata.html"><span>Object Wisata</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="paketwisatalombok.html">Paket Wisata Lombok</a></li>
+                            <li><a href="paketwisatabali.html">Paket Wisata Bali</a></li>
+                            <li><a href="paketwisatayogyakarta.html">Paket Wisata Yogyakarta</a></li>
+                            <li><a href="paketwisatabandung.html">Paket Wisata Bandung</a></li>
+                            <li><a href="paketwisatajakarta.html">Paket Wisata Jakarta</a></li>
+                            <li><a href="paketwisatabromo.html">Paket Wisata Tour Bromo</a></li>
+                            <li><a href="paketwisatabromomalang.html">Paket Wisata Bromo-Malang</a></li>
+                            <li><a href="paketwisatamalang.html">Paket Wisata Tour Malang</a></li>
+                        </ul>
+                    <li><a class="nav-link scrollto" href="formkontak.php">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <div class="footer-text">
+            <h2>Paket Wisata</h2>
+            <p>Pilih destinasi wisata favorit Anda</p>
+        </div>
+
+        <section class="package-section">
+            <div class="container" data-aos="fade-up">
+                <div class="package-container">
+
+                    <!-- Paket Wisata Bali -->
+                    <div class="package" data-aos="fade-up" data-aos-delay="100">
+                        <img src="gambar.oi/Bali.jpg" alt="Paket Wisata Bali">
+                        <div class="package-content">
+                            <h3>Paket Wisata Bali</h3>
+                            <p>Mulai dari Rp 1.700.000</p>
+                        </div>
+                        <button onclick="location.href='paketwisatabali.html'">Lihat Rincian</button>
+                    </div>
+
+                    <!-- Paket Wisata Lombok -->
+                    <div class="package" data-aos="fade-up" data-aos-delay="200">
+                        <img src="gambar.oi/lombokkkkkkkkkkk.jpg" alt="Paket Wisata Lombok">
+                        <div class="package-content">
+                            <h3>Paket Wisata Lombok</h3>
+                            <p>Mulai dari Rp 2.500.000</p>
+                        </div>
+                        <button onclick="location.href='paketwisatalombok.html'">Lihat Rincian</button>
+                    </div>
+
+                    <!-- Paket Wisata Jawa -->
+                    <div class="package" data-aos="fade-up" data-aos-delay="300">
+                        <img src="gambar.oi/borobudur.jpg" alt="Paket Wisata Jawa">
+                        <div class="package-content">
+                            <h3>Paket Wisata Yogyakarta</h3>
+                            <p>Mulai dari Rp 1.350.250</p>
+                        </div>
+                        <button onclick="location.href='paketwisatayogyakarta.html'">Lihat Rincian</button>
+                    </div>
+
+                    <!-- Paket Wisata Bandung -->
+                    <div class="package" data-aos="fade-up" data-aos-delay="400">
+                        <img src="gambar.oi/bandung.jpg" alt="Paket Wisata Bandung">
+                        <div class="package-content">
+                            <h3>Paket Wisata Bandung</h3>
+                            <p>Mulai dari Rp 2.200.000</p>
+                        </div>
+                        <button onclick="location.href='paketwisatabandung.html'">Lihat Rincian</button>
+                    </div>
+
+                    <!-- Paket Wisata Jakarta -->
+                    <div class="package" data-aos="fade-up" data-aos-delay="500">
+                        <img src="gambar.oi/monas.jpg" alt="Paket Wisata Jakarta">
+                        <div class="package-content">
+                            <h3>Paket Wisata Jakarta</h3>
+                            <p>Mulai dari Rp 2.080.000</p>
+                        </div>
+                        <button onclick="location.href='paketwisatajakarta.html'">Lihat Rincian</button>
+                    </div>
+
+                    <div class="package" data-aos="fade-up" data-aos-delay="500">
+                        <img src="gambar.oi/bromo.jpg" alt="Paket Wisata Jakarta">
+                        <div class="package-content">
+                            <h3>Paket Wisata Tour Bromo</h3>
+                            <p>Mulai dari Rp 3.346.500</p>
+                        </div>
+                        <button onclick="location.href='paketwisatabromo.html'">Lihat Rincian</button>
+                    </div>
+
+                    <div class="package" data-aos="fade-up" data-aos-delay="500">
+                        <img src="gambar.oi/bromo2.jpg" alt="Paket Wisata Jakarta">
+                        <div class="package-content">
+                            <h3>Paket Wisata Bromo-Malang</h3>
+                            <p>Mulai dari Rp 3.346.500</p>
+                        </div>
+                        <button onclick="location.href='paketwisatabromomalang.html'">Lihat Rincian</button>
+                    </div>
+
+                    <div class="package" data-aos="fade-up" data-aos-delay="500">
+                        <img src="gambar.oi/malangbatu.jpg.png" alt="Paket Wisata Jakarta">
+                        <div class="package-content">
+                            <h3>Paket Wisata Tour Malang</h3>
+                            <p>Mulai dari Rp 3.346.500</p>
+                        </div>
+                        <button onclick="location.href='paketwisatabromomalang.html'">Lihat Rincian</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
